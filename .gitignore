@@ -1,0 +1,12 @@
+/vendor/
+/node_modules/
+/js/dist/
+/js/node_modules/
+composer.lock
+package-lock.json
+.DS_Store
+*.log
+.idea/
+.vscode/
+*.bat
+*.sh

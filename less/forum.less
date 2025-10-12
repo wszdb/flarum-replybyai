@@ -1,0 +1,28 @@
+.AiReplyButton {
+  // 确保按钮可见
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+  
+  // 样式
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  
+  .icon {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    background-color: #45a049;
+  }
+
+  &.loading {
+    opacity: 0.6 !important;
+    cursor: not-allowed;
+  }
+}

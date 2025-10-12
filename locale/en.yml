@@ -1,0 +1,22 @@
+wszdb-replybyai:
+  admin:
+    settings:
+      api_key_label: API Key
+      api_key_help: Enter your OpenAI API key or compatible service API key
+      base_url_label: Base URL
+      base_url_help: API endpoint URL (e.g., https://api.openai.com/v1)
+      model_label: Model Name
+      model_help: The AI model to use (e.g., gpt-3.5-turbo, gpt-4)
+      max_tokens_label: Max Tokens
+      max_tokens_help: Maximum length of AI-generated replies (default 200)
+      content_max_length_label: Content Max Length
+      content_max_length_help: Maximum number of characters to extract from post content for AI analysis (default 200)
+      button_text_label: Button Text
+      button_text_help: Custom text displayed on the AI reply button (default "AI回复")
+      system_prompt_label: System Prompt
+      system_prompt_help: Instructions that guide AI behavior when generating replies
+
+  forum:
+    smart_reply: AI Reply
+    reply_generated: AI reply generated successfully! You can edit it before posting.
+    reply_failed: "Failed to generate reply. Error: {error}"
