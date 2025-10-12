@@ -10,7 +10,7 @@ This plugin supports the integration of any large models that comply with the Op
 
 <img width="762" height="854" alt="局部截取_20251012_205046" src="https://github.com/user-attachments/assets/8923712b-60e6-486c-9582-045f00ea4f23" />
 
-<img width="936" height="824" alt="局部截取_20251012_205420" src="https://github.com/user-attachments/assets/56d0b39c-f146-4cb8-8400-e1a19c732c9b" />
+<img width="624" height="549" alt="局部截取_20251012_205420" src="https://github.com/user-attachments/assets/56d0b39c-f146-4cb8-8400-e1a19c732c9b" />
 
 
 ## Features
@@ -69,3 +69,4 @@ MIT License. See LICENSE.md for details.
 
 
 Developed by [wszdb](https://github.com/wszdb)
+
