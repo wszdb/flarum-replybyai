@@ -32,8 +32,9 @@ return [
         ->default('wszdb-replybyai.api_key', '')
         ->default('wszdb-replybyai.base_url', 'https://api.openai.com/v1')
         ->default('wszdb-replybyai.model', 'gpt-3.5-turbo')
-        ->default('wszdb-replybyai.max_tokens', 200)
+        ->default('wszdb-replybyai.max_tokens', 1024)
         ->default('wszdb-replybyai.content_max_length', 200)
-        ->default('wszdb-replybyai.button_text', 'AI回复')
-        ->default('wszdb-replybyai.system_prompt', 'You are a helpful assistant. Generate a thoughtful and relevant reply to the given post content. Keep the response concise and friendly.'),
+        ->default('wszdb-replybyai.button_icon', 'fas fa-robot')
+        ->default('wszdb-replybyai.system_prompt', 'You are a helpful assistant. Generate a thoughtful and relevant reply to the given post content. Keep the response concise and friendly.')
+        ->serializeToForum('wszdb-replybyai.button_icon', 'wszdb-replybyai.button_icon'),
 ];

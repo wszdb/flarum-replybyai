@@ -29,7 +29,7 @@ app.initializers.add('wszdb-replybyai', () => {
       type: 'number',
       label: app.translator.trans('wszdb-replybyai.admin.settings.max_tokens_label'),
       help: app.translator.trans('wszdb-replybyai.admin.settings.max_tokens_help'),
-      placeholder: '200',
+      placeholder: '1024',
     })
     .registerSetting({
       setting: 'wszdb-replybyai.content_max_length',
@@ -39,11 +39,11 @@ app.initializers.add('wszdb-replybyai', () => {
       placeholder: '200',
     })
     .registerSetting({
-      setting: 'wszdb-replybyai.button_text',
+      setting: 'wszdb-replybyai.button_icon',
       type: 'text',
-      label: app.translator.trans('wszdb-replybyai.admin.settings.button_text_label'),
-      help: app.translator.trans('wszdb-replybyai.admin.settings.button_text_help'),
-      placeholder: 'AI回复',
+      label: 'Button Icon',
+      help: 'FontAwesome icon class for the AI reply button (e.g., "fas fa-robot", "fas fa-magic", "fas fa-brain")',
+      placeholder: 'fas fa-robot',
     })
     .registerSetting({
       setting: 'wszdb-replybyai.system_prompt',

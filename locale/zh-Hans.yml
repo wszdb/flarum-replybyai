@@ -8,15 +8,13 @@ wszdb-replybyai:
       model_label: 模型名称
       model_help: 要使用的 AI 模型（例如：gpt-3.5-turbo、gpt-4）
       max_tokens_label: 最大令牌数
-      max_tokens_help: AI 生成回复的最大长度（默认 200）
+      max_tokens_help: AI 生成回复的最大长度（默认 1024）
       content_max_length_label: 内容最大长度
       content_max_length_help: 从帖子内容中提取用于 AI 分析的最大字符数（默认 200）
-      button_text_label: 按钮文案
-      button_text_help: AI 回复按钮上显示的自定义文字（默认"AI回复"）
       system_prompt_label: 系统提示词
       system_prompt_help: 指导 AI 生成回复时的行为说明
 
   forum:
-    smart_reply: AI回复
+    smart_reply: AI智能回复
     reply_generated: AI 回复生成成功！您可以在发送前编辑内容。
     reply_failed: "生成回复失败。错误：{error}"

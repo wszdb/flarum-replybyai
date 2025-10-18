@@ -12,20 +12,28 @@ app.initializers.add('wszdb-replybyai', () => {
     console.log('TextEditor controlItems called');
     console.log('Current items:', items);
     
-    const buttonText = app.forum.attribute('wszdb-replybyai.button_text') || 'AI回复';
+    // 【修改1】判断是否在回贴场景（ReplyComposer）
+    // 只有在回贴时才显示AI按钮，发新贴时不显示
+    const isReplyComposer = app.composer.bodyMatches(ReplyComposer);
+    
+    if (!isReplyComposer) {
+      console.log('Not in reply composer, skipping AI button');
+      return;
+    }
+    
+    // 【修改2】从配置中读取图标设置，默认为 "fas fa-robot"
+    const buttonIcon = app.forum.attribute('wszdb-replybyai.button_icon') || 'fas fa-robot';
     
     const button = (
       <Button
         className="Button Button--icon AiReplyButton"
-        icon="fas fa-robot"
+        icon={buttonIcon}
         onclick={this.generateAIReply.bind(this)}
         loading={this.aiReplyLoading}
         disabled={this.aiReplyLoading}
-        title={buttonText}
+        title={app.translator.trans('wszdb-replybyai.forum.smart_reply')}
         style="background-color: #4CAF50; color: white; z-index: 9999;"
-      >
-        {buttonText}
-      </Button>
+      />
     );
     
     items.add('aiReply', button, 10);

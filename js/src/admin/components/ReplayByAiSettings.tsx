@@ -36,7 +36,15 @@ export default class ReplayByAiSettings extends ExtensionPage {
               type: 'number',
               label: app.translator.trans('wszdb-replaybyai.admin.settings.max_tokens_label'),
               help: app.translator.trans('wszdb-replaybyai.admin.settings.max_tokens_help'),
-              placeholder: '200',
+              placeholder: '1024',
+            })}
+            
+            {this.buildSettingComponent({
+              setting: 'wszdb-replaybyai.button_icon',
+              type: 'text',
+              label: 'Button Icon',
+              help: 'FontAwesome icon class for the AI reply button (e.g., "fas fa-robot", "fas fa-magic", "fas fa-brain")',
+              placeholder: 'fas fa-robot',
             })}
             
             {this.buildSettingComponent({
